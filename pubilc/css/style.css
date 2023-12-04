@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(14, 70, 145, 1) 0%, rgba(49, 169, 246, 1) 100%);
+}
+
+.blog-card {
+    position: absolute;
+    width: 95%;
+    max-width: 70%;
+    margin-top: 5rem;
+    border-radius: 25px;
+    background: white;
+    box-shadow: 0px 10px 50px rgba(126, 126, 126, 0.3);
+}
+
+.inner-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+}
+
+.content {
+    padding: 0 20px 0 35px;
+    width: 100%;
+    margin-left: 50px;
+    transition: .6s;
+    align-items: center;
+    justify-content: center;
+}
+
+.content .title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0d0925;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#add {
+    margin-bottom: 10px;
+}
+
+#back {
+    margin: 12px;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #0d0925;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+}

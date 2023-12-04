@@ -1,0 +1,219 @@
+/* all */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --main-blue: #0d4691;
+  --main-purple: #0d4691;
+  --main-grey: #ccc;
+  --sub-grey: #d9d9d9;
+}
+
+body {
+  display: flex;
+  /* height: 100vh; */
+  justify-content: center; 
+  /* align-items: center;  */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(14, 70, 145, 1) 0%, rgba(49, 169, 246, 1) 100%);
+  padding: 10px;
+  /* height: 1200px */
+
+}
+/* container and form */
+.container {
+	border: 1px solid #000;
+	margin: 20px;
+  /* max-width: 700px; */
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  height: 1100px
+}
+.container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+
+.container .title::before {
+  content: "";
+  position: absolute;
+  height: 3.5px;
+  width: 30px;
+  background: linear-gradient(135deg, var(--main-blue), var(--main-purple));
+  left: 0;
+  bottom: 0;
+}
+
+.container form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+/* inside the form user details */
+form .user__details .input__box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.user__details .input__box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.user__details .input__box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid var(--main-grey);
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+.user__details .input__box input:focus,
+.user__details .input__box input:valid {
+  border-color: var(--main-purple);
+}
+
+/* inside the form gender details */
+
+form .gender__details .gender__title {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+form .gender__details .category {
+  display: flex;
+  width: 80%;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.gender__details .category label {
+  display: flex;
+  align-items: center;
+}
+
+.gender__details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: var(--sub-grey);
+  border-radius: 50%;
+  margin: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category .one,
+#dot-2:checked ~ .category .two,
+#dot-3:checked ~ .category .three {
+  border-color: var(--sub-grey);
+  background: var(--main-purple);
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+/* submit button */
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #0d4691,#0d4691);
+  transition: all 0.3s ease;
+}
+
+form .button input:hover {
+  background: linear-gradient(-135deg, #0d4691,#0d4691);
+}
+
+@media only screen and (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  form .gender__details .category {
+    width: 100%;
+  }
+
+  .container form .user__details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+
+  .user__details::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+
+.user__details .input__box select {
+	height: 45px;
+	width: 100%;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid var(--main-grey);
+	padding-left: 15px;
+	font-size: 16px;
+	border-bottom-width: 2px;
+	transition: all 0.3s ease;
+  }
+  
+  .user__details .input__box select:focus,
+  .user__details .input__box select:valid {
+	border-color: var(--main-purple);
+  }
+
+
+.file-input__input {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+  }
+  
+  .file-input__label {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	border-radius: 4px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fff;
+	font-size: 14px;
+	padding: 10px 12px;
+	background-color: #0d4691;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+  }
+  
+  .file-input__label svg {
+	height: 16px;
+	margin-right: 4px;
+  }
+  

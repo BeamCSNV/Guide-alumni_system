@@ -1,0 +1,35 @@
+body {}
+
+.ex2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(14, 70, 145, 1) 0%, rgba(49, 169, 246, 1) 100%);
+    color: white;
+
+}
+
+.ex5 {
+    display: flex;
+    align-items: center;
+}
+
+.ex5>input[type='radio'] {
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+
+.ex5>.item {
+    flex-grow: 1;
+}
+
+.ex4 {
+    display: flex;
+  }
+  .ex4 > .item {
+    flex-basis: 100%;
+  }
